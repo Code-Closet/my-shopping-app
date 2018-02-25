@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  selectedTab: number = 1;
+
+  changeTab(tab: number){
+    console.log("Tab No : "+tab);
+    this.selectedTab = tab;
+  }
 }
